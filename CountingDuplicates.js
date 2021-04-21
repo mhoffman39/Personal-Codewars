@@ -43,3 +43,5 @@ const duplicateCount = (string) => {
   }
   return count
 }
+
+console.log(duplicateCount('ABBac'))
