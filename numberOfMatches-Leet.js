@@ -5,31 +5,17 @@
 // Return the number of matches played in the tournament until a winner is decided.
 
 var numberOfMatches = function(n) {
-//I: integer representing number of teams
-//O: integer representing number of rounds
-  //create a teams variable equal to n
   let teams = n;
-  //create a matches variable
   let matches = 0;
-  //while teams is > 1
   while (teams > 1) {
-    //if teams is even
     if (teams % 2 === 0) {
-      //teams = teams / 2
-      //matches equals matches + teams
       teams = teams / 2;
       matches = matches + teams
-    }
-    //otherwise
-    else {
-      //matches equals matches + (teams - 1) / 2
-      //teams = (teams - 1) / 2 + 1
+    } else {
       matches = matches + (teams - 1) / 2;
       teams = (teams - 1) / 2 + 1;
     }
-
   }
-
   return matches
 };
 
