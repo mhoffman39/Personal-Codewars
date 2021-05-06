@@ -1,1 +1,1 @@
-# A repository for Leetcode, Codewars, and other toy problems
+# Leetcode, Codewars, and other toy problems
