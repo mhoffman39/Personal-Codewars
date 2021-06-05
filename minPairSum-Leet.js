@@ -11,7 +11,6 @@ var minPairSum = function(nums) {
   const pairs = [];
   const sums =[];
   const sorted = nums.sort((a,b) => a - b);
-
   for (let i = 0; i < sorted.length / 2; i ++) {
     const onePair = [];
     onePair.push(sorted[i], sorted[sorted.length - 1- i])
