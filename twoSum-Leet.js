@@ -1,15 +1,15 @@
 var twoSum = function(nums, target) {
-  //iterate over nums array
+  const obj = {};
   for (let i = 0; i < nums.length; i ++) {
-    //if (current < target)
-    //variable to hold target - current value
-    let search = target - nums[i];
-    //using find if variable is found (!-1)
-    for (let j = i + 1; j < nums.length; j ++) {
-      if (nums[j] === search) {
-        return [i, j]
-      }
+    let needed = target - nums[i];
+    if (obj[needed] !== undefined) {
+      return [obj[needed], i]
+    } else {
+      obj[nums[i]] = i;
+      console.log(obj)
     }
   }
+  return []
 };
-        console.log(twoSum([3,2,4], 6))
+
+console.log(twoSum([2,7,11,15], 9))  //[0,1]
