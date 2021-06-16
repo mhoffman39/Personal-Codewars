@@ -29,7 +29,6 @@ var removeDuplicates = function(s) {
   if (changes === 0) {
     return array.join('');
   } else {
-    console.log(array)
     return removeDuplicates(array.join(''))
   }
 }
