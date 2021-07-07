@@ -37,7 +37,6 @@ var maxSubArray = function(nums) {
       }
       console.log(maxSum, curSum)
   }
-
   return maxSum
 };
 
