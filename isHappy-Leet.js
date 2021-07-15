@@ -19,7 +19,6 @@ var isHappy = function(n) {
         return false;
       }
       arr.push(n);
-      console.log(arr)
     }
   }
   return false;
