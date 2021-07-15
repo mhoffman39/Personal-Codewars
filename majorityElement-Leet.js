@@ -3,9 +3,7 @@
 // The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 
 var majorityElement = function(nums) {
-  //holder object
   const counter = {};
-  //iterate over the array
   for (let i = 0; i < nums.length; i++) {
     counter[nums[i]] >= 1 ? counter[nums[i]]++ : counter[nums[i]] = 1;
     if (counter[nums[i]] >= nums.length / 2) {
