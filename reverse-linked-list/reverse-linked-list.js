@@ -11,12 +11,14 @@
  */
 var reverseList = function(head) {
   let prev = null;
+  let next = null;
+  let current = head;
   
-  while (head !== null) {
-    let next_node = head.next;
-    head.next = prev;
-    prev = head;
-    head = next_node;
+  while (current) {
+    next = current.next;
+    current.next = prev;
+    prev = current;
+    current = next;
   }
   return prev;
 };
