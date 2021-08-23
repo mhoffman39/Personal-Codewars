@@ -21,7 +21,7 @@ var insertIntoBST = function(root, val) {
         current = current.right;
       } else {
         current.right = new TreeNode(val);
-        break;
+        break
       }
     } else {
       if (current.left) {
