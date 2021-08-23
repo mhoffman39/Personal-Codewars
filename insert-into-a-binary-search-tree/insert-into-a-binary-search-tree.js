@@ -12,7 +12,7 @@
  * @return {TreeNode}
  */
 var insertIntoBST = function(root, val) {
-  if (root === null) {return new TreeNode(val)};
+  if (root == null) {return new TreeNode(val)};
   
   let current = root;
   while (true) {
@@ -21,7 +21,7 @@ var insertIntoBST = function(root, val) {
         current = current.right;
       } else {
         current.right = new TreeNode(val);
-        break
+        break;
       }
     } else {
       if (current.left) {
